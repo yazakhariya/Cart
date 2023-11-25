@@ -13,7 +13,10 @@
           <img src="img/Каталог.svg" />
           <img src="img/Лого WB.svg" />
         </nav>
-        <input />
+        <div class="input-box">
+          <input type="text" class="search-input" placeholder="Я ищу..." />
+          <img src="img/Search.svg" alt="Поиск товара" class="search-img" />
+        </div>
         <nav class="right-top-corner-nav">
           <figure class="right-top-corner-nav_caption">
             <img src="img/Иконка профиля.svg" />
@@ -21,10 +24,33 @@
           </figure>
           <figure>
             <img src="img/Иконка корзины.svg" />
-            <figcaption class="right-top-corner-nav_caption">Корзина</figcaption>
+            <figcaption class="right-top-corner-nav_caption">
+              Корзина
+            </figcaption>
           </figure>
         </nav>
       </div>
     </header>
+    <main>
+      <div class="goods-section">
+        <h1>Корзина</h1>
+        <section class="all-goods">
+          <div class="all-goods_choose-all">
+            <label
+              ><input
+                id="highload0"
+                type="checkbox"
+                class="all-goods_choose-all_checkbox"
+              /><span>Выбрать все</span></label
+            >
+            <img
+              class="all-goods_choose-all_show-more"
+              src="img/up-arrow.svg"
+            />
+          </div>
+          <div class="all-goods_product-cart"></div>
+        </section>
+      </div>
+    </main>
   </body>
 </html>
