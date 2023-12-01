@@ -34,6 +34,7 @@
     <main>
       <div class="goods-section">
         <h1>Корзина</h1>
+        <!-- In-cart items -->
         <section class="all-goods">
           <div class="all-goods_choose-all">
             <label
@@ -47,7 +48,6 @@
               src="img/up-arrow.svg"
             />
           </div>
-
           <div class="all-goods_product-cart">
             <div class="all-goods_product-cart_item-box">
               <div class="all-goods_product-cart_main">
@@ -58,7 +58,9 @@
                   /><img alt="Фото товара" src="img/Frame 3853.jpg" />
                 </div>
                 <div class="all-goods_product-cart-desc">
-                  <h3 class="all-goods_product-cart-desc_item-name">Футболка UZcotton мужская</h3>
+                  <h3 class="all-goods_product-cart-desc_item-name">
+                    Футболка UZcotton мужская
+                  </h3>
                   <p>Цвет: белый Размер: 56</p>
                   <p class="all-goods_product-cart-desc_extra-info">
                     Коледино WB
@@ -73,6 +75,7 @@
               <div class="all-goods_product-cart_input-info_quantity">
                 <div class="all-goods_product-cart_input">
                   <button
+                    class="all-goods_product-cart_input-button"
                     type="button"
                     onclick="this.nextElementSibling.stepDown(); this.nextElementSibling.onchange();"
                   >
@@ -86,6 +89,7 @@
                     readonly
                   />
                   <button
+                    class="all-goods_product-cart_input-button"
                     type="button"
                     onclick="this.previousElementSibling.stepUp(); this.previousElementSibling.onchange();"
                   >
@@ -106,7 +110,6 @@
               </div>
             </div>
           </div>
-
           <div class="all-goods_product-cart">
             <div class="all-goods_product-cart_item-box">
               <div class="all-goods_product-cart_main">
@@ -136,6 +139,7 @@
               <div class="all-goods_product-cart_input-info_quantity">
                 <div class="all-goods_product-cart_input">
                   <button
+                    class="all-goods_product-cart_input-button"
                     type="button"
                     onclick="this.nextElementSibling.stepDown(); this.nextElementSibling.onchange();"
                   >
@@ -149,6 +153,7 @@
                     readonly
                   />
                   <button
+                    class="all-goods_product-cart_input-button"
                     type="button"
                     onclick="this.previousElementSibling.stepUp(); this.previousElementSibling.onchange();"
                   >
@@ -168,7 +173,6 @@
               </div>
             </div>
           </div>
-
           <div class="all-goods_product-cart">
             <div class="all-goods_product-cart_item-box">
               <div class="all-goods_product-cart_main">
@@ -196,6 +200,7 @@
               <div class="all-goods_product-cart_input-info_quantity">
                 <div class="all-goods_product-cart_input">
                   <button
+                    class="all-goods_product-cart_input-button"
                     type="button"
                     onclick="this.nextElementSibling.stepDown(); this.nextElementSibling.onchange();"
                   >
@@ -209,6 +214,7 @@
                     readonly
                   />
                   <button
+                    class="all-goods_product-cart_input-button"
                     type="button"
                     onclick="this.previousElementSibling.stepUp(); this.previousElementSibling.onchange();"
                   >
@@ -230,7 +236,7 @@
             </div>
           </div>
         </section>
-
+        <!-- Deleted items -->
         <section>
           <div class="all-goods_choose-all">
             <h3><b>Отсутствуют · 3 товара</b></h3>
@@ -239,14 +245,17 @@
               src="img/up-arrow.svg"
             />
           </div>
-
           <div class="all-goods_product-cart">
             <div class="all-goods_product-cart_item-box">
               <div class="all-goods_product-cart_main">
                 <img alt="Фото товара" src="img/Frame 3853 (1).jpg" />
                 <div class="all-goods_product-cart-desc">
-                  <h3 class="all-goods_product-cart_deleted-item">Футболка UZcotton мужская</h3>
-                  <p class="all-goods_product-cart_deleted-item">Цвет: белый Размер: 56</p>
+                  <h3 class="all-goods_product-cart_deleted-item">
+                    Футболка UZcotton мужская
+                  </h3>
+                  <p class="all-goods_product-cart_deleted-item">
+                    Цвет: белый Размер: 56
+                  </p>
                 </div>
               </div>
             </div>
@@ -259,7 +268,6 @@
               </div>
             </div>
           </div>
-
           <div class="all-goods_product-cart">
             <div class="all-goods_product-cart_item-box">
               <div class="all-goods_product-cart_main">
@@ -269,7 +277,9 @@
                     Силиконовый чехол картхолдер (отверстия) для карт,
                     прозрачный кейс бампер на Apple iPhone XR, MobiSafe
                   </h3>
-                  <p class="all-goods_product-cart_deleted-item">Цвет: прозрачный</p>
+                  <p class="all-goods_product-cart_deleted-item">
+                    Цвет: прозрачный
+                  </p>
                 </div>
               </div>
             </div>
@@ -282,7 +292,6 @@
               </div>
             </div>
           </div>
-
           <div class="all-goods_product-cart">
             <div class="all-goods_product-cart_item-box">
               <div class="all-goods_product-cart_main">
@@ -305,7 +314,124 @@
             </div>
           </div>
         </section>
+        <!-- Delivery method -->
+        <div class="all-methods-wrapper">
+          <section class="all-method-box">
+            <div class="all-method-box_header-box">
+              <h2 class="all-method-box_header">Способ доставки</h2>
+              <button class="all-method-box_header-button" type="button">
+                Изменить
+              </button>
+            </div>
+            <div class="delivery-method-box_info">
+              <p class="delivery-method-box_text-aside">Пункт выдачи</p>
+              <div>
+                <p class="delivery-method-box_text">
+                  Бишкек, улица Ахматбека Суюмбаева, 12/1
+                </p>
+                <p class="delivery-method-box_text">
+                  <img
+                    alt="Рейтинг пункта выдачи"
+                    src="img/star_fill.svg"
+                  />4.99 Ежедневно с 10 до 21
+                </p>
+              </div>
+            </div>
+            <div class="delivery-method-box_info">
+              <p class="delivery-method-box_text-aside">Стоимость доставки</p>
+              <p class="delivery-method-box_text">Бесплатно</p>
+            </div>
+            <div class="delivery-method-box_info">
+              <p class="delivery-method-box_text-aside">5—6 февраля</p>
+              <div class="delivery-method-box_info_items">
+                <img alt="Фото товара" width="40px" src="img/Frame 3853.jpg" />
+                <img
+                  alt="Фото товара"
+                  width="40px"
+                  src="img/Frame 277132129.png"
+                />
+                <img alt="Фото товара" width="40px" src="img/Bitmap.jpg" />
+              </div>
+            </div>
+            <div class="delivery-method-box_info">
+              <p class="delivery-method-box_text-aside">7—8 февраля</p>
+              <img
+                alt="Фото товара"
+                width="40px"
+                src="img/Frame 277132129.png"
+              />
+            </div>
+            <div class="delivery-method-box_info-extra">
+              <img alt="Цена доставки" src="img/price shipping.svg" />
+              <p class="delivery-method-box_info-extra-text">
+                Обратная доставка товаров на склад при отказе —
+              </p>
+              <span class="delivery-method-box_info-extra-color-text"
+                >бесплатно</span
+              >
+            </div>
+          </section>
+          <!-- Payment method -->
+          <section class="all-method-box">
+            <div class="all-method-box_header-box">
+              <h2 class="all-method-box_header">Способ оплаты</h2>
+              <button class="all-method-box_header-button" type="button">
+                Изменить
+              </button>
+            </div>
+            <div class="payment-method-box_wrapper">
+              <div class="payment-method-box_info">
+                <img
+                  alt="Значок платежной системы"
+                  src="img/Платежные системы.jpg"
+                />
+                <p class="payment-method-box_info-text">1234 56•• •••• 1234</p>
+                <p class="payment-method-box_info-text">01/30</p>
+              </div>
+              <p class="payment-method-box_info-text-extra">
+                Спишем оплату с карты при получении
+              </p>
+            </div>
+          </section>
+          <!-- Receiver info-box -->
+          <section class="all-method-box">
+            <h2 class="all-method-box_header">Способ оплаты</h2>
+            <div class="receiver-info-wrapper">
+              <input
+                class="receiver-info receiver-name"
+                placeholder="Имя"
+                type="text"
+              />
+              <input
+                class="receiver-info receiver-name"
+                placeholder="Фамилия"
+                type="text"
+              />
+              <input
+                class="receiver-info receiver-data"
+                placeholder="Почта"
+                type="email"
+              />
+              <label class="receiver-phone"
+                >Телефон<input
+                  class="receiver-info receiver-data"
+                  value="+7 988 123-45-67"
+                  type="tel"
+              /></label>
+              <label class="receiver-regno"
+                ><input
+                  class="receiver-info receiver-data"
+                  placeholder="ИНН"
+                  type="number"
+                />Для таможенного оформления</label
+              >
+            </div>
+          </section>
+        </div>
       </div>
     </main>
+    <footer>
+      <p class="footer-text">© 2022 ООО «Товары и точка»</p>
+    </footer>
   </body>
 </html>

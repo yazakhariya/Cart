@@ -3,10 +3,15 @@
   padding: 0;
   font-family: Segoe UI;
   background: var(--system-violet, #6725a8);
+  font-style: normal;
 }
 
 b {
   background-color: transparent;
+}
+
+button {
+  cursor: pointer;
 }
 
 /* Header */
@@ -100,7 +105,7 @@ main {
 .goods-section {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 40px;
   background: #f6f6fa;
 }
 
@@ -147,7 +152,6 @@ span {
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
-  width: 827px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -242,10 +246,9 @@ p {
   justify-content: space-between;
 }
 
-button {
+.all-goods_product-cart_input-button {
   background: transparent;
   border: none;
-  cursor: pointer;
   width: 9px;
 }
 
@@ -296,4 +299,229 @@ input {
 
 .all-goods_product-cart-desc_item-name:hover {
   text-decoration: underline;
+}
+
+.all-methods-wrapper {
+  background: transparent;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+/* Метод оплаты */
+.all-method-box {
+  display: flex;
+  padding: 16px 24px 24px 24px;
+  gap: 16px;
+  align-self: stretch;
+  border-radius: 16px;
+  background: var(--background-white, #fff);
+  width: 843px;
+}
+
+.all-method-box_header-box {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background: transparent;
+}
+
+.delivery-method-box_info_items {
+  background: transparent;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.all-method-box_header {
+  color: var(--text-black, #000);
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: -0.24px;
+  background: var(--background-white, #fff);
+}
+
+.all-method-box_header-button {
+  background: transparent;
+  border: none;
+  color: var(--system-magenta, #cb11ab);
+  text-align: right;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.delivery-method-box_text-aside {
+  background: var(--background-white, #fff);
+  color: var(--text-black, #000);
+  width: 153px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+.delivery-method-box_text {
+  background: var(--background-white, #fff);
+  color: var(--text-black, #000);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.delivery-method-box_color-text {
+  background: var(--background-white, #fff);
+  color: var(--text-black, #000);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.delivery-method-box_info {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 32px;
+  width: 100%;
+  background: transparent;
+}
+
+.delivery-method-box_info-extra {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 8px;
+  width: 100%;
+  background: transparent;
+  align-items: center;
+}
+
+.delivery-method-box_info-extra-text {
+  background: var(--background-white, #fff);
+  color: var(--text-black, #000);
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+.delivery-method-box_info-extra-color-text {
+  background: var(--background-white, #fff);
+  color: var(--system-green, #0cb477);
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 16px;
+  text-decoration: underline;
+  text-decoration-style: dashed;
+  text-underline-offset: 4px;
+}
+
+/* Payment method */
+
+.payment-method-box_wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background: transparent;
+  gap: 8px;
+  width: 100%;
+}
+
+.payment-method-box_info {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background: transparent;
+  gap: 8px;
+}
+
+.payment-method-box_info-text {
+  background: var(--background-white, #fff);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.payment-method-box_info-text-extra {
+  width: 100%;
+  color: var(--system-gray, #9797af);
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 16px;
+  background: var(--background-white, #fff);
+}
+
+/* Информация о получателе */
+
+.receiver-info-wrapper {
+  display: flex;
+  gap: 24px;
+  background: transparent;
+  width: 100%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  padding-bottom: 14px;
+}
+
+.receiver-info {
+  border-bottom: 1px solid #9797af;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.receiver-name {
+  width: 338px;
+}
+
+.receiver-data {
+  width: 218px;
+}
+
+.receiver-phone {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  align-items: flex-start;
+  color: #9797af;
+  background: var(--background-white, #fff);
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+.receiver-regno {
+  background: var(--background-white, #fff);
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  align-items: flex-start;
+  color: #000000;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14px;
+  position: relative;
+  top: 14px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Footer */
+
+.footer-text {
+  background: transparent;
+  padding: 24px;
+  color: rgba(255, 255, 255, 0.7);
+  text-align: center;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 16px;
 }
