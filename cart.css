@@ -17,21 +17,20 @@ button {
 /* Header */
 
 header {
-  padding: 24px 16px;
+  padding: 16px 0px 16px 24px;
 }
 
 .top-content {
   display: flex;
-  display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  align-items: center;
   gap: 32px;
 }
 
 .left-top-corner-nav {
   display: flex;
   gap: 16px;
+  align-items: center;
 }
 
 .right-top-corner-nav {
@@ -39,11 +38,14 @@ header {
   gap: 40px;
   flex-direction: row;
   flex-wrap: wrap;
-  align-items: flex-end;
+  align-items: center;
 }
 
 .right-top-corner-nav_caption {
   color: white;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 16px;
 }
 
 .input-box {
@@ -54,14 +56,15 @@ header {
   gap: 8px;
   flex: 1 0 0;
   align-self: stretch;
-  height: 48px;
   padding: 0px 20px;
-  align-items: center;
+  width: 970px;
+  height: 48px;
+  position: relative;
+  top: 7px;
 }
 
 .search-input {
   display: flex;
-  padding-bottom: 0px;
   align-items: center;
   gap: 4px;
   flex: 1 0 0;
@@ -93,16 +96,18 @@ h1 {
 }
 
 main {
+  padding: 24px 24px;
   display: flex;
   align-items: flex-start;
   gap: 32px;
   align-self: stretch;
   border-radius: 24px;
   background: #f6f6fa;
-  padding: 34px 24px;
+  width: fit-content;
 }
 
 .goods-section {
+  padding-top: 10px;
   display: flex;
   flex-direction: column;
   gap: 40px;
@@ -118,6 +123,7 @@ section {
 }
 
 .all-goods_choose-all {
+  padding-top: 17px;
   background: #f6f6fa;
   border-bottom: 1px solid #9797af;
   display: flex;
@@ -126,8 +132,13 @@ section {
   align-items: center;
   flex-wrap: wrap;
   gap: 8px;
-  width: 891px;
+  width: 899px;
   justify-content: space-between;
+}
+
+.all-goods_choose-all_box {
+  display: flex;
+  gap: 11px;
 }
 
 input[type="checkbox"] {
@@ -512,6 +523,160 @@ input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
+}
+
+/* Итог заказа */
+
+.concluding-card_wrapper {
+  display: flex;
+  width: 429px;
+  padding: 16px 24px 24px 24px;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 381px;
+  gap: 24px;
+  border-radius: 16px;
+  background: var(--background-white, #fff);
+  box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.3),
+    0px 2px 10px 0px rgba(0, 0, 0, 0.15);
+}
+
+.concluding-card_boxes {
+  background: var(--background-white, #fff);
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.concluding-card_text_wrapper {
+  background: var(--background-white, #fff);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 13px;
+}
+
+.concluding-card_left-text,
+.concluding-card_right-text {
+  background: var(--background-white, #fff);
+}
+
+.concluding-card_right-text {
+  text-align: right;
+}
+
+.concluding-card_text {
+  background: var(--background-white, #fff);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.concluding-card_color-text {
+  background: var(--background-white, #fff);
+  color: var(--system-magenta, #cb11ab);
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 16px;
+  text-decoration: underline;
+  text-decoration-style: dashed;
+  text-underline-offset: 4px;
+}
+
+.concluding-card_extra-text_wrapper {
+  display: flex;
+  padding: 8px 8px 12px 8px;
+  align-items: center;
+  gap: 8px;
+  align-self: stretch;
+  border-radius: 8px;
+  background: var(--background-smoky, #f6f6fa);
+  margin-top: 12px;
+}
+
+.concluding-card_extra-text {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+.concluding-card_extra-text_color-text {
+  color: var(--system-green, #0cb477);
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 16px;
+  text-decoration: underline;
+  text-decoration-style: dashed;
+  text-underline-offset: 4px;
+}
+
+.concluding-card_text_header {
+  background: var(--background-white, #fff);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.wrapper {
+  background: var(--background-smoky, #f6f6fa);
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.concluding-card_extra-text_checkbox-text {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 16px;
+  display: flex;
+  gap: 8px;
+}
+
+.concluding-card_order {
+  background: transparent;
+}
+
+.concluding-card_order_button {
+  border-radius: 8px;
+  background: var(--system-magenta, #cb11ab);
+  color: var(--system-white, #fff);
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  border: none;
+  width: 381px;
+  height: 44px;
+}
+
+.concluding-card_order_checkbox {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  background: transparent;
+  gap: 8px;
+  padding-top: 12px;
+}
+
+#order-checkbox {
+  accent-color: #ffffff;
+}
+
+.concluding-card_order_checkbox-text {
+  display: flex;
+  flex-direction: row;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 16px;
+  background: transparent;
+}
+
+.concluding-card_order_checkbox_color-text {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 16px;
 }
 
 /* Footer */

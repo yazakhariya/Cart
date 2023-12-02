@@ -7,37 +7,33 @@
     <link rel="stylesheet" href="cart.css" />
   </head>
   <body>
-    <header>
-      <div class="top-content">
-        <nav class="left-top-corner-nav">
-          <img src="img/Каталог.svg" />
-          <img src="img/Лого WB.svg" />
-        </nav>
-        <div class="input-box">
-          <input type="text" class="search-input" placeholder="Я ищу..." />
-          <img src="img/Search.svg" alt="Поиск товара" class="search-img" />
-        </div>
-        <nav class="right-top-corner-nav">
-          <figure class="right-top-corner-nav_caption">
-            <img src="img/Иконка профиля.svg" />
-            <figcaption>Профиль</figcaption>
-          </figure>
-          <figure>
-            <img src="img/Иконка корзины.svg" />
-            <figcaption class="right-top-corner-nav_caption">
-              Корзина
-            </figcaption>
-          </figure>
-        </nav>
+    <header class="top-content">
+      <nav class="left-top-corner-nav">
+        <img src="img/Каталог.svg" />
+        <img src="img/Лого WB.svg" />
+      </nav>
+      <div class="input-box">
+        <input type="text" class="search-input" placeholder="Я ищу..." />
+        <img src="img/Search.svg" alt="Поиск товара" class="search-img" />
       </div>
+      <nav class="right-top-corner-nav">
+        <figure class="right-top-corner-nav_caption">
+          <img src="img/Иконка профиля.svg" />
+          <figcaption>Профиль</figcaption>
+        </figure>
+        <figure>
+          <img src="img/Иконка корзины.svg" />
+          <figcaption class="right-top-corner-nav_caption">Корзина</figcaption>
+        </figure>
+      </nav>
     </header>
     <main>
       <div class="goods-section">
-        <h1>Корзина</h1>
         <!-- In-cart items -->
         <section class="all-goods">
+          <h1>Корзина</h1>
           <div class="all-goods_choose-all">
-            <label
+            <label class="all-goods_choose-all_box"
               ><input
                 type="checkbox"
                 class="all-goods_choose-all_checkbox"
@@ -395,7 +391,7 @@
           </section>
           <!-- Receiver info-box -->
           <section class="all-method-box">
-            <h2 class="all-method-box_header">Способ оплаты</h2>
+            <h2 class="all-method-box_header">Получатель</h2>
             <div class="receiver-info-wrapper">
               <input
                 class="receiver-info receiver-name"
@@ -429,6 +425,89 @@
           </section>
         </div>
       </div>
+      <!-- Concluding card -->
+      <section class="concluding-card_wrapper">
+        <div class="concluding-card_boxes">
+          <div class="all-method-box_header-box">
+            <h2 class="all-method-box_header">Итого</h2>
+            <h2 class="all-method-box_header">2 101 063 сом</h2>
+          </div>
+          <div class="concluding-card_text_wrapper">
+            <div class="concluding-card_left-text">
+              <p class="concluding-card_text">203 товара</p>
+              <p class="concluding-card_text">Скидка</p>
+              <p class="concluding-card_text">Доставка</p>
+            </div>
+            <div class="concluding-card_right-text">
+              <p class="concluding-card_text">2 302 048 сом</p>
+              <p class="concluding-card_text">−200 985 сом</p>
+              <p class="concluding-card_text">Бесплатно</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="concluding-card_boxes">
+          <div class="all-method-box_header-box">
+            <h4 class="concluding-card_text_header">Доставка в пункт выдачи</h4>
+            <img alt="Редактировать" src="img/edit.svg" />
+          </div>
+          <div class="concluding-card_left-text">
+            <p class="concluding-card_text">
+              Бишкек, улица Ахматбека Суюмбаева, 12/1
+            </p>
+            <span class="concluding-card_color-text">5–8 фев</span>
+            <div class="concluding-card_extra-text_wrapper">
+              <img alt="Цена доставки" src="img/price shipping.svg" />
+              <div class="concluding-card_extra-text_box">
+                <p class="concluding-card_extra-text">
+                  Обратная доставка товаров на склад при отказе —
+                </p>
+                <span class="concluding-card_extra-text_color-text"
+                  >бесплатно</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="concluding-card_boxes">
+          <div class="all-method-box_header-box">
+            <h4 class="concluding-card_text_header">Оплата картой</h4>
+            <img alt="Редактировать" src="img/edit.svg" />
+          </div>
+          <div class="payment-method-box_info">
+            <img
+              alt="Значок платежной системы"
+              src="img/Платежные системы.jpg"
+            />
+            <p class="payment-method-box_info-text">1234 56•• •••• 1234</p>
+          </div>
+          <div class="concluding-card_extra-text_wrapper">
+            <div class="wrapper">
+              <label class="concluding-card_extra-text_checkbox-text"
+                ><input
+                  type="checkbox"
+                  class="all-goods_choose-all_checkbox"
+                /><span class="concluding-card_extra-text_checkbox-text"
+                  >Списать оплату сразу</span
+                ></label
+              >
+              <p class="concluding-card_extra-text_checkbox-text">
+                Спишем оплату с карты при получении
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="concluding-card_order">
+          <button class="concluding-card_order_button">Заказать</button>
+          <label class="concluding-card_order_checkbox"
+            ><input type="checkbox" id="order-checkbox" class="concluding-card_order_checkbox" />
+            <p class="concluding-card_order_checkbox-text">
+              Соглашаюсь с правилами пользования торговой площадкой и возврата
+            </p></label
+          >
+        </div>
+      </section>
     </main>
     <footer>
       <p class="footer-text">© 2022 ООО «Товары и точка»</p>
