@@ -11,3 +11,4 @@
 git clone https://github.com/yazakhariya/Cart.git
 ```  
 ## Деплой проекта
+https://cart-jade-eight.vercel.app/
