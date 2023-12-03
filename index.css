@@ -760,3 +760,8 @@ input::-webkit-inner-spin-button {
   font-weight: 400;
   line-height: 16px;
 }
+
+.empty_field {
+  border-color: rgb(255, 43, 5);
+  border-width: 4px;
+}

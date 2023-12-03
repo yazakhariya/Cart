@@ -6,7 +6,7 @@
     <title>Корзина</title>
     <link rel="stylesheet" href="index.css" />
   </head>
-  <body>
+  <body class="body">
     <header class="top-content">
       <nav class="left-top-corner-nav">
         <img src="img/Каталог.svg" />
@@ -318,7 +318,7 @@
                   <img alt="Фото товара" src="img/Frame 277132129 (2).jpg" />
                   <div class="all-goods_product-cart-desc">
                     <h3 class="all-goods_product-cart_deleted-item">
-                      Карандаши цветные Faber-Castell "Замок", набор 24 цвета, 
+                      Карандаши цветные Faber-Castell "Замок", набор 24 цвета,
                       заточенные, шестигранные, Faber-Castell
                     </h3>
                   </div>
@@ -416,37 +416,51 @@
           </section>
           <!-- Receiver info-box -->
           <section class="all-method-box">
-            <h2 style="padding-bottom: 22px;" class="all-method-box_header">Получатель</h2>
-            <div class="receiver-info-wrapper">
+            <h2 style="padding-bottom: 22px" class="all-method-box_header">
+              Получатель
+            </h2>
+            <form class="receiver-info-wrapper">
               <input
-                class="receiver-info receiver-name"
+                id="user-name"
+                class="receiver-info receiver-name field"
                 placeholder="Имя"
                 type="text"
+                minlength="2"
+                maxlength="32"
+                required
               />
               <input
-                class="receiver-info receiver-name"
+                id="user-lastname"
+                class="receiver-info receiver-name field"
                 placeholder="Фамилия"
                 type="text"
+                minlength="2"
+                maxlength="32"
+                required
               />
               <input
-                class="receiver-info receiver-data"
+                id="user-email"
+                class="receiver-info receiver-data field"
                 placeholder="Почта"
                 type="email"
               />
               <label class="receiver-phone"
                 >Телефон<input
-                  class="receiver-info receiver-data"
-                  value="+7 988 123-45-67"
+                  id="user-tel"
+                  class="receiver-info receiver-data field"
+                  placeholder="+7 988 123-45-67"
                   type="tel"
+                  required
               /></label>
               <label class="receiver-regno"
                 ><input
-                  class="receiver-info receiver-data"
+                  id="user-regnum"
+                  class="receiver-info receiver-data field"
                   placeholder="ИНН"
                   type="number"
                 />Для таможенного оформления</label
               >
-            </div>
+            </form>
           </section>
         </div>
       </div>
@@ -470,7 +484,6 @@
             </div>
           </div>
         </div>
-
         <div class="concluding-card_boxes">
           <div class="all-method-box_header-box">
             <h4 class="concluding-card_text_header">Доставка в пункт выдачи</h4>
@@ -494,7 +507,6 @@
             </div>
           </div>
         </div>
-
         <div class="concluding-card_boxes">
           <div class="all-method-box_header-box">
             <h4 class="concluding-card_text_header">Оплата картой</h4>
@@ -537,6 +549,8 @@
           >
         </div>
       </section>
+      <script src="validation_2.js"></script>
+      <script src="index.js"></script>
     </main>
     <footer>
       <p class="footer-text">© 2022 ООО «Товары и точка»</p>
