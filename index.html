@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="index.css" />
   </head>
   <body class="body">
-    <header class="top-content">
+    <header id="menu" class="top-content">
       <nav class="left-top-corner-nav">
         <img src="img/Каталог.svg" />
         <img src="img/Лого WB.svg" />
@@ -27,10 +27,17 @@
         </figure>
       </nav>
     </header>
+    <header id="mobile-menu" class="top-content">
+      <nav class="left-top-corner-nav">
+        <img src="img/mobile/icon-28 (1).svg" />
+        <img src="img/mobile/Товары и точка.svg" />
+      </nav>
+      <img src="img/mobile/icon-28.svg" />
+    </header>
     <main>
       <div class="goods-section">
         <!-- In-cart items -->
-        <section>
+        <section id="carts">
           <div class="cart-header">
             <h1>Корзина</h1>
             <div class="all-goods_choose-all">
@@ -384,10 +391,10 @@
             </div>
             <div class="delivery-method-box_info-extra">
               <img alt="Цена доставки" src="img/price shipping.svg" />
-              <p class="delivery-method-box_info-extra-text">
+              <p style="display: inline;" class="delivery-method-box_info-extra-text">
                 Обратная доставка товаров на склад при отказе —
               </p>
-              <span class="delivery-method-box_info-extra-color-text"
+              <span style="display: inline;" class="delivery-method-box_info-extra-color-text"
                 >бесплатно</span
               >
             </div>
