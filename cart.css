@@ -96,10 +96,10 @@ h1 {
 }
 
 main {
-  padding: 24px 24px;
+  padding: 24px 24px 50px;
   display: flex;
   align-items: flex-start;
-  gap: 32px;
+  gap: 35px;
   align-self: stretch;
   border-radius: 24px;
   background: #f6f6fa;
@@ -110,7 +110,7 @@ main {
   padding-top: 10px;
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 38px;
   background: #f6f6fa;
 }
 
@@ -118,12 +118,24 @@ section {
   background: #f6f6fa;
   display: flex;
   flex-direction: column;
+}
+
+.cart-header {
+  background: #f6f6fa;
+  display: flex;
+  flex-direction: column;
+  gap: 27px;
+}
+
+.all-goods {
+  background: #f6f6fa;
+  display: flex;
+  flex-direction: column;
   align-items: flex-start;
-  gap: 12px;
+  gap: 20px;
 }
 
 .all-goods_choose-all {
-  padding-top: 17px;
   background: #f6f6fa;
   border-bottom: 1px solid #9797af;
   display: flex;
@@ -170,9 +182,20 @@ span {
 
 .all-goods_product-cart {
   background: #f6f6fa;
+  width: 100%;
   display: flex;
   flex-direction: row;
-  gap: 200px;
+  justify-content: space-between;
+  padding-top: 12px;
+}
+
+.all-goods_product-cart_deleted {
+  gap: 276px;
+  background: #f6f6fa;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  padding-top: 12px;
 }
 
 .all-goods_product-cart_item-box {
@@ -182,6 +205,11 @@ span {
   flex-direction: row;
   align-items: center;
   gap: 16px;
+}
+
+#item {
+  position: relative;
+  left: 37px;
 }
 
 .all-goods_product-cart_main {
@@ -221,7 +249,13 @@ p {
 }
 
 .all-goods_product-cart-desc {
-  width: 275px;
+  width: 309px;
+  display: flex;
+  flex-direction: column;
+}
+
+.all-goods_product-cart-desc_item-color {
+  padding: 8px 0px;
 }
 
 .all-goods_product-cart-desc_extra-info {
@@ -271,6 +305,12 @@ input {
   width: 44px;
 }
 
+.deleted-items_header {
+  padding-top: 14px;
+  position: relative;
+  bottom: 3px;
+}
+
 .product-cart_input-digit {
   text-align: right;
 }
@@ -285,11 +325,33 @@ input {
 
 .like-delete {
   background: transparent;
-  text-align: right;
+  display: flex;
+  justify-content: flex-end;
+  gap: 16px;
 }
 
 .all-goods_product-cart_input-info_price {
   background: #f6f6fa;
+  text-align: right;
+}
+
+.currency {
+  color: var(--text-black, #000);
+  text-align: right;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.all-goods_product-cart_input-info_price-text {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: -0.2px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  gap: 5px;
 }
 
 .all-goods_product-cart_input-info_price-old {
@@ -328,7 +390,7 @@ input {
   align-self: stretch;
   border-radius: 16px;
   background: var(--background-white, #fff);
-  width: 843px;
+  width: 852px;
 }
 
 .all-method-box_header-box {
@@ -353,7 +415,6 @@ input {
   font-size: 24px;
   font-weight: 700;
   line-height: 32px;
-  letter-spacing: -0.24px;
   background: var(--background-white, #fff);
 }
 
@@ -402,6 +463,7 @@ input {
 }
 
 .delivery-method-box_info-extra {
+  padding-top: 10px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -447,6 +509,7 @@ input {
   flex-wrap: wrap;
   background: transparent;
   gap: 8px;
+  align-items: center;
 }
 
 .payment-method-box_info-text {
@@ -475,7 +538,7 @@ input {
   flex-direction: row;
   flex-wrap: wrap;
   align-items: flex-end;
-  padding-bottom: 14px;
+  padding-bottom: 20px;
 }
 
 .receiver-info {
@@ -555,7 +618,7 @@ input::-webkit-inner-spin-button {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  margin-top: 13px;
+  margin-top: 6px;
 }
 
 .concluding-card_left-text,
@@ -587,13 +650,13 @@ input::-webkit-inner-spin-button {
 
 .concluding-card_extra-text_wrapper {
   display: flex;
-  padding: 8px 8px 12px 8px;
+  padding: 11px 8px 12px 8px;
   align-items: center;
   gap: 8px;
   align-self: stretch;
   border-radius: 8px;
   background: var(--background-smoky, #f6f6fa);
-  margin-top: 12px;
+  margin-top: 15px;
 }
 
 .concluding-card_extra-text {
@@ -610,6 +673,13 @@ input::-webkit-inner-spin-button {
   text-decoration: underline;
   text-decoration-style: dashed;
   text-underline-offset: 4px;
+}
+
+.concluding-card_paying-method {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 16px;
+  background: var(--background-white, #fff);
 }
 
 .concluding-card_text_header {
